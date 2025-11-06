@@ -8,44 +8,30 @@
  */
 #}
 <div class="page-wrapper">
-  {# <header class="site-header">
-    <div class="container">
-      {% if page.header %}
-        {{ page.header }}
-      {% endif %}
-      
-      <div class="site-branding">
-        <h1 class="site-title">
-          <a href="{{ path('<front>') }}" class="btn btn--outline">
-            {{ site_name|default('My Site') }}
-          </a>
-        </h1>
-      </div>
-    </div>
-  </header> #}
+	<header class="site-header">
+		{% if page.header %}
+			{{ page.header }}
+		{% endif %}
+	</header>
 
-  <main class="main-content">
-    <div class="container">
-      {# {% if page.highlighted %}
-        <div class="highlighted">
-          {{ page.highlighted }}
-        </div>
-      {% endif %} #}
+	<main class="main-content">
+		<div class="container">
 
-      <div style="background-color:red">
-       {% if page.content %}
-        {{ page.content }} 
-       {% endif %}
-      </div>
-    </div>
-  </main>
+			{% if page.content %}
+				{{ page.content }}
+			{% endif %}
 
-  <footer class="footer">
-    <div>
-      {% if page.footer %}
-        {{ page.footer }}
-      {% endif %}
-      <p class="footer__copyright">&copy; {{ "now"|date("Y") }} ROXBOZ Drupal Testing</p>
-    </div>
-  </footer>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div>
+			{% if page.footer %}
+				{{ page.footer }}
+			{% endif %}
+			<div class="footer__copyright">&copy;
+				{{ "now"|date("Y") }}
+				ROXBOZ Drupal Testing</div>
+		</div>
+	</footer>
 </div>
