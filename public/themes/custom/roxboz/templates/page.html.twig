@@ -30,19 +30,12 @@
         <div class="highlighted">
           {{ page.highlighted }}
         </div>
-      {% endif %}
+      {% endif %} #}
 
-      <div class="content-area">
-        {{ page.content }}
-      </div> #}
-
-      <div class="buttons-component">
-        <h3>Button Components Demo</h3>
-        <div class="buttons-group">
-          <button class="btn--primary">Primary Button</button>
-          <button class="btn--secondary">Secondary Button</button>
-          <button class="btn--outline">Outline Button</button>
-        </div>
+      <div style="background-color:red">
+       {% if page.content %}
+        {{ page.content }} 
+       {% endif %}
       </div>
     </div>
   </main>
