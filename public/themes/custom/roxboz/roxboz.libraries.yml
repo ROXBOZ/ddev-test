@@ -1,0 +1,9 @@
+global-styling:
+  css:
+    theme:
+      css/style.css: {}
+      css/components/button.css: {}
+  js:
+    js/roxboz.js: {}
+  dependencies:
+    - core/drupal

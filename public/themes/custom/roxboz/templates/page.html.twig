@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Roxboz theme implementation to display a single page.
+ *
+ * Available variables:
+ * - page: A render array representing the page content.
+ */
+#}
+<div class="page-wrapper">
+  {# <header class="site-header">
+    <div class="container">
+      {% if page.header %}
+        {{ page.header }}
+      {% endif %}
+      
+      <div class="site-branding">
+        <h1 class="site-title">
+          <a href="{{ path('<front>') }}" class="btn btn--outline">
+            {{ site_name|default('My Site') }}
+          </a>
+        </h1>
+      </div>
+    </div>
+  </header> #}
+
+  <main class="main-content">
+    <div class="container">
+      {# {% if page.highlighted %}
+        <div class="highlighted">
+          {{ page.highlighted }}
+        </div>
+      {% endif %}
+
+      <div class="content-area">
+        {{ page.content }}
+      </div> #}
+
+      <div class="buttons-component">
+        <h3>Button Components Demo</h3>
+        <div class="buttons-group">
+          <button class="btn--primary">Primary Button</button>
+          <button class="btn--secondary">Secondary Button</button>
+          <button class="btn--outline">Outline Button</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div>
+      {% if page.footer %}
+        {{ page.footer }}
+      {% endif %}
+      <p class="footer__copyright">&copy; {{ "now"|date("Y") }} ROXBOZ Drupal Testing</p>
+    </div>
+  </footer>
+</div>

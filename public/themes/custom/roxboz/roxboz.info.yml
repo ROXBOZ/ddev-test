@@ -1,0 +1,21 @@
+name: 'Roxboz Theme'
+type: theme
+description: 'Custom Roxboz theme for learning Drupal theming'
+core_version_requirement: ^10 || ^11
+base theme: olivero
+
+libraries:
+  - roxboz/global-styling
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  hero: Hero
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  content_bottom: 'Content bottom'
+  footer: Footer

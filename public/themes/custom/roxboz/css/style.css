@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Roxboz Theme - Main Styles
+   ========================================================================== */
+
+:root {
+  --primary: blue;
+  --secondary: lightgreen;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper {
+  background-color: lightyellow;
+}
+.main-content {
+  padding: 2rem 0;
+}
+.container {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: yellow;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.footer__copyright {
+  margin-left: auto;
+  width: fit-content;
+}
