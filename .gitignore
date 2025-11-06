@@ -1,0 +1,59 @@
+# Ignore dependencies
+/vendor/
+
+# Ignore sensitive configuration files
+/public/sites/*/settings*.php
+/public/sites/*/services*.yml
+!public/sites/*/settings*.php
+!public/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+/public/sites/*/files/
+
+# Ignore contributed modules, themes, and drush commands.
+/public/core
+/public/modules/contrib/
+/public/themes/contrib/
+/public/profiles/contrib/
+/drush/Commands/contrib/
+
+# Ignore custom modules, themes, and profiles if not needed in version control
+# /public/modules/custom/
+# /public/themes/custom/
+# /public/profiles/custom/
+
+# Ignore DDEV generated files
+/.ddev/.ddev-docker-compose-*.yaml
+/.ddev/.dbimageBuild/
+/.ddev/.webimageBuild/
+
+# Ignore editor/OS specific files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+.tmp
+/tmp/
+
+# Ignore environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore composer lock file variations
+# /composer.lock
+
+# Ignore node_modules if using frontend build tools
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
