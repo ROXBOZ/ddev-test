@@ -7,50 +7,19 @@
   --secondary: lightgreen;
 }
 
-/* Header */
-.site-header {
-  height: fit-content;
-  background-color: pink;
-  padding: 0.5rem;
-  min-height: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1;
-  margin: 0;
-  padding: 0;
-}
-
 .page-wrapper {
-  background-color: fuchsia;
   min-height: 0;
   padding: 0;
   margin: 0;
 }
 .main-content {
   height: fit-content;
-  min-height: 0;
-  background-color: green;
+  min-height: 0 !important;
   margin: 0;
   padding: 0;
 }
 .container {
   width: 100%;
-}
-
-/* Footer */
-footer {
-  background-color: yellow;
-  padding: 0.5rem;
-  font-size: 0.875rem;
-}
-
-.footer__copyright {
-  margin-left: auto;
-  width: fit-content;
+  min-height: 0 !important;
+  padding-top: 3rem;
 }

@@ -1,0 +1,28 @@
+footer {
+  background-color: sandybrown;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.footer__copyright {
+  margin-left: auto;
+  width: fit-content;
+  font-size: smaller;
+}
+
+footer .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: fit-content;
+}
+
+footer .menu .menu__item {
+  list-style: none;
+}
+
+footer .menu .menu__item a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}

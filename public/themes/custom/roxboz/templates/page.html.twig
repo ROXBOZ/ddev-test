@@ -14,6 +14,12 @@
 		{% endif %}
 	</header>
 
+	{% if page.hero %}
+		<section class="hero">
+			{{ page.hero }}
+		</section>
+	{% endif %}
+
 	<main class="main-content">
 		<div class="container">
 
@@ -26,9 +32,13 @@
 
 	<footer class="footer">
 		<div>
-			{% if page.footer %}
-				{{ page.footer }}
+
+			{% if page.footer_navigation %}
+				<nav class="footer__navigation">
+					{{ page.footer_navigation }}
+				</nav>
 			{% endif %}
+
 			<div class="footer__copyright">&copy;
 				{{ "now"|date("Y") }}
 				ROXBOZ Drupal Testing</div>

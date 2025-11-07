@@ -2,7 +2,11 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/header.css: {}
+      css/footer.css: {}
+      css/typography.css: {}
       css/components/button.css: {}
+      css/components/event-calendar.css: {}
   js:
     js/roxboz.js: {}
   dependencies:

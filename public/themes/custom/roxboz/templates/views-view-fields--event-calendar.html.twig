@@ -1,0 +1,35 @@
+{% set event = row._entity %}
+
+<div class="event">
+  <div class="event__time">
+    {{ event.field_starting_time.value|date('H:i') }}-{{
+      event.field_ending_time.value|date('H:i')
+    }}
+  </div>
+
+  <div class="event__title">
+    {{ fields.field_title.content }}
+  </div>
+
+  <div class="event__details">
+    <div class="event__trainer">
+      <span class="event__label">With</span> {{ fields.field_trainer.content }}
+    </div>
+
+    {% if event.field_for_kids.value == true %}
+      {% set age_label = event.field_minimum_age.value >= 13 ? 'Teens' : 'Kids'
+      %}
+      <div class="event__age-group">
+        For {{ age_label }}, {{ fields.field_minimum_age.content }}-{{
+          fields.field_maximum_age.content
+        }} y.o.
+      </div>
+    {% endif %}
+
+    {% if event.field_open_to_beginners.value == true %}
+      <div class="event__open-to-beginners">
+        Open to Beginners
+      </div>
+    {% endif %}
+  </div>
+</div>

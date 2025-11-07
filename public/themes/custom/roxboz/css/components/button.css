@@ -9,6 +9,12 @@
   gap: 0.5rem;
 }
 
+.buttons-component p {
+  margin: 0;
+  padding: 0;
+  background-color: orange;
+}
+
 .buttons-group {
   display: flex;
   gap: 1rem;

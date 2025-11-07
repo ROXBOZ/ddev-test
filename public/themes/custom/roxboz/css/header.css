@@ -1,0 +1,17 @@
+.site-header {
+  height: fit-content;
+  background-color: sandybrown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  min-height: 0;
+  line-height: 1;
+}
+
+.site-header h1 {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+  padding-bottom: 0;
+}

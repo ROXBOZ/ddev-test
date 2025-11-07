@@ -1,8 +1,14 @@
 <div class="buttons-component" style="background-color:lightblue">
-  <h3>{{ heading }}</h3>
-  <div class="btn-group">
-    <button class="btn--primary">Primary Button</button>
-    <button class="btn--secondary">Secondary Button</button>
-    <button class="btn--outline">Outline Button</button>
-  </div>
+	<h3>{{ heading }}</h3>
+	<p>{{ description }}</p>
+	<div class="btn-group">
+		<button class="btn--primary">Primary Button</button>
+		<button class="btn--secondary">Secondary Button</button>
+		<button class="btn--outline">Outline Button</button>
+	</div>
+	{% if image %}
+		<div class="image">
+			{{ image }}
+		</div>
+	{% endif %}
 </div>

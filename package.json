@@ -1,0 +1,13 @@
+{
+  "name": "ddev-test",
+  "version": "1.0.0",
+  "description": "Drupal theme development",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-twig-melody": "^0.4.6"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{twig,css,js,json}\""
+  }
+}
