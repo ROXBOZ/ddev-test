@@ -22,30 +22,32 @@
     %}
   {% endif %}
 {% endfor %}
+<div class="event-calendar-container">
+  <div class="calendar">
+    <div class="calendar__header">
+      <div class="calendar__day-header">Monday</div>
+      <div class="calendar__day-header">Tuesday</div>
+      <div class="calendar__day-header">Wednesday</div>
+      <div class="calendar__day-header">Thursday</div>
+      <div class="calendar__day-header">Friday</div>
+    </div>
 
-<div class="calendar">
-  <div class="calendar__header">
-    <div class="calendar__day-header">Monday</div>
-    <div class="calendar__day-header">Tuesday</div>
-    <div class="calendar__day-header">Wednesday</div>
-    <div class="calendar__day-header">Thursday</div>
-    <div class="calendar__day-header">Friday</div>
+    <div class="calendar__body">
+      {% for day_name, events in weekdays %}
+        <div class="calendar__column">
+          {% if events %}
+            {% set sorted_events = events|sort((a, b) => a.content['#row']._entity.field_starting_time.value <=> b.content['#row']._entity.field_starting_time.value) %}
+            {% for event in sorted_events %}
+              <div {{ event.attributes.addClass('calendar__event') }}>
+                {{ event.content }}
+              </div>
+            {% endfor %}
+          {% else %}
+            <div class="calendar__no-events">No events</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
   </div>
-
-  <div class="calendar__body">
-    {% for day_name, events in weekdays %}
-      <div class="calendar__column">
-        {% if events %}
-          {% set sorted_events = events|sort((a, b) => a.content['#row']._entity.field_starting_time.value <=> b.content['#row']._entity.field_starting_time.value) %}
-          {% for event in sorted_events %}
-            <div {{ event.attributes.addClass('calendar__event') }}>
-              {{ event.content }}
-            </div>
-          {% endfor %}
-        {% else %}
-          <div class="calendar__no-events">No events</div>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
+  <div style="background-color:yellow; padding: 0.5rem; margin: 1rem 0;">Next : build formular to add event via frontend</div>
 </div>
