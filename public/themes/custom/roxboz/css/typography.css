@@ -1,3 +1,7 @@
+* {
+  color: var(--text);
+}
+
 h1,
 h2,
 h3,
@@ -9,6 +13,6 @@ h6 {
   padding: 0;
 }
 
-* {
-  color: black;
+strong {
+  font-weight: var(--bold);
 }

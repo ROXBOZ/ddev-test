@@ -24,6 +24,6 @@ footer .menu .menu__item {
 
 footer .menu .menu__item a {
   text-decoration: none;
-  color: black;
-  border-bottom: 1px solid black;
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
 }
