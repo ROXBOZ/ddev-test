@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\roxboz_calendar\Controller;
+namespace Drupal\custom_calendar\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
@@ -25,7 +25,7 @@ class CalendarController extends ControllerBase {
       '#events' => $events,
       '#attached' => [
         'library' => [
-          'roxboz_calendar/calendar-styling',
+          'custom_calendar/calendar-styling',
         ],
       ],
     ];

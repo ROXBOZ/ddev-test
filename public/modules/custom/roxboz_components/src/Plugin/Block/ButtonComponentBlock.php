@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\roxboz_components\Plugin\Block;
+namespace Drupal\custom_components\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * @Block(
  *   id = "button_component_block",
  *   admin_label = @Translation("Button Component"),
- *   category = @Translation("Roxboz Components"),
+ *   category = @Translation("custom Components"),
  * )
  */
 class ButtonComponentBlock extends BlockBase {
@@ -77,7 +77,7 @@ class ButtonComponentBlock extends BlockBase {
       // Mark file as permanent.
       \Drupal::service('file.usage')->add(
         \Drupal::entityTypeManager()->getStorage('file')->load($image[0]),
-        'roxboz_components',
+        'custom_components',
         'block',
         1
       );

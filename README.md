@@ -1,13 +1,13 @@
-# Roxboz Theme Setup
+# custom Theme Setup
 
 ## Files Created
 
 ### Theme Structure
 
-- `/public/themes/custom/roxboz/` - Custom theme folder
-- `roxboz.info.yml` - Theme config
-- `roxboz.libraries.yml` - CSS/JS libraries
-- `roxboz.theme` - PHP functions
+- `/public/themes/custom/custom/` - Custom theme folder
+- `custom.info.yml` - Theme config
+- `custom.libraries.yml` - CSS/JS libraries
+- `custom.theme` - PHP functions
 
 ### Styles
 
@@ -20,7 +20,7 @@
 
 ### JavaScript
 
-- `js/roxboz.js` - Theme JavaScript
+- `js/custom.js` - Theme JavaScript
 
 ### Templates
 
@@ -76,7 +76,7 @@ The event calendar displays training courses in a 5-column weekday layout:
 ddev drush cache:rebuild
 
 # Enable theme
-ddev drush theme:enable roxboz
+ddev drush theme:enable custom
 
 # Format Twig files
 npx prettier --write "**/*.twig"

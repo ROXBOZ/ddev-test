@@ -1,0 +1,8 @@
+name: Event Form
+type: module
+description: "Provides a block with a form to add events to the calendar."
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - drupal:block_content
+  - drupal:block

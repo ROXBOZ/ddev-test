@@ -1,5 +1,5 @@
-name: "Roxboz Components"
+name: "custom Components"
 type: module
-description: "Custom components for Roxboz theme"
+description: "Custom components for custom theme"
 core_version_requirement: ^10 || ^11
 package: Custom

@@ -1,6 +1,6 @@
 .site-header {
   height: fit-content;
-  background-color: sandybrown;
+  background-color: var(--primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
