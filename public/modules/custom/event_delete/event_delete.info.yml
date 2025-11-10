@@ -1,0 +1,7 @@
+name: "Event Delete"
+type: module
+description: "Provides delete functionality for calendar events"
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies:
+  - block_content

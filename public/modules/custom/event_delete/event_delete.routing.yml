@@ -1,0 +1,13 @@
+# Route for deleting an event
+event_delete.delete:
+  path: "/event/delete/{block_content}"
+  defaults:
+    _controller: '\Drupal\event_delete\Controller\EventDeleteController::delete'
+    _title: "Delete Event"
+  requirements:
+    _permission: "delete event content"
+    block_content: \d+
+  options:
+    parameters:
+      block_content:
+        type: entity:block_content

@@ -1,6 +1,23 @@
 {% set event = row._entity %}
 
 <div class="event">
+  {# Delete button - routing will check permissions #}
+  {% if user.isAuthenticated %}
+    <a href="{{
+      path(
+        'event_delete.delete',
+        {
+          block_content: event.id.value
+        }
+      )
+      }}"
+      class="event__delete"
+      title="Delete this event"
+      onclick="return confirm('Are you sure you want to delete this event?');">
+      ×
+    </a>
+  {% endif %}
+
   <div class="event__time">
     {{ event.field_starting_time.value|date('H:i') }}-{{
       event.field_ending_time.value|date('H:i')

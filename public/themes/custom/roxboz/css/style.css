@@ -2,6 +2,10 @@
    Roxboz Theme - Main Styles
    ========================================================================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-light: #c2fc5a;
   --primary: #adf338;

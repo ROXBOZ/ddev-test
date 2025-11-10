@@ -1,0 +1,4 @@
+# Custom permission for deleting events
+delete event content:
+  title: "Delete event content"
+  description: "Allow users to delete events from the calendar"

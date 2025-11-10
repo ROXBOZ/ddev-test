@@ -25,6 +25,8 @@ class EventAddForm extends FormBase
      */
     public function buildForm(array $form, FormStateInterface $form_state)
     {
+        // Add ID to the form wrapper
+        $form['#attributes']['id'] = 'addEvent';
 
         $form['description'] = [
             '#markup' => '<p><strong>Add a new course to the calendar</strong></p>',
@@ -33,7 +35,7 @@ class EventAddForm extends FormBase
         // Event Title - a text input field
         $form['title'] = [
             '#type' => 'select',
-            '#title' => $this->t('Event Title'),
+            '#title' => $this->t('Course Type'),
             '#options' => [
                 'Kickboxen' => $this->t('Kickboxen'),
                 'Wendo' => $this->t('Wendo'),
